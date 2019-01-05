@@ -6,3 +6,11 @@ msg+='<p>height:'+window.screen.height+'</p>'
 var el=document.getElementById('info')
 el.innerHTML=msg
 window.alert('Current page:'+window.location)
+
+var el=document.getElementById('message');
+var saying='Lenght of the string is: ';
+saying+=saying.length;
+saying+=' substring: '+saying.substring(0,6);
+saying+=" index: "+saying.charAt(0);
+saying=saying.concat(' code of char '+saying.charCodeAt(0));
+el.innerText=saying;

@@ -1,0 +1,11 @@
+var saying='House pretty house';
+var msg='<h2>Lenght</h2><p>'+saying.length+'</p>';
+msg+='<h2>Uppercase</h2><p>'+saying.toUpperCase()+'</p>';
+msg+='<h2>Lowcase</h2><p>'+saying.toLowerCase()+'</p>';
+msg+='<h2>Symbol number 11</h2><p>'+saying.charAt(11)+'</p>';
+msg+='<h2>First occurrence #tt</h2><p>'+saying.indexOf('tt')+'</p>';
+msg+='<h2>Last occurrence #us</h2><p>'+saying.lastIndexOf('us')+'</p>';
+msg+='<h2>Substring 6-12</h2><p>'+saying.substring(6,12)+'</p>';
+msg+='<h2>Replacement symbols</h2><p>'+saying.replace('y','#')+'</p>';
+var el=document.getElementById('info');
+el.innerHTML=msg;
